@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Projects</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+						
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/josh-shih/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/BobinShihJosh" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date"></span>
+									<h1>Robot Sign<br />
+									Language</h1>
+									<p>A novel wireless communication method for autonomous vehicles, implemented and tested on UW's open source platform for mobile, multi-agent Robotics</p>
+									<p> <a href="https://github.com/BobinShihJosh/Robot_Sign_Language"> View Code</a></p>
+								</header>
+								<div class="image main"><img src="images/wireless.png" alt="" /><p><i>This project was created using software stack made by UW Personal Robotics Lab's opensource platform(MuSHR) for testing AI in autonomous vehicles and robotics. The software stack is entirely open
+									source and can be accessed <a href="https://mushr.io">here.</a></i>
+								</p></div>
+								
+								<p><b>Basic Idea Outline</b> 
+									An adaptive cruise control setup where two cars are able to communicate to each other through slightly altering their speeds(encoding information in velocity). 
+								</p>	
+								<p><b>Example Scenario</b>	
+									CarA travels at approximately 60mph constant speed and leads car2 at a fixed 20m distance. Car A encodes information in its speed by encoding a 0 as even speed(i.e 60 mph) and 1 as an odd speed (i.e 61 mph). Car B maintains the 20m distance using an adaptive cruise control setup. Now the speed of car B should be the same as car and and if we decode car B’s speed we can get the encoded message. 
+								</p>	
+								<p><b>Challenge</b>	 
+									First we need to ensure the adaptive cruise control is good enough to stay at the desired distance and thus have the same speed as car A. This comes with the trade-off of efficiency. Thus we need to test the good balance between accuracy and efficiency of this method. On top of that the hardest part is to be able to accuracy
+									observer CarA's speed, which isn't a big problem in simulation, but really hard in real life. I am currently implementing it in real life with MuSHR race cars using Pose prediction with help of Laser range finder. 
+									
+									</b></p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+						<section class="split contact">
+							
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(206) 619-9205</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">bobinshihjosh@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/josh-shih/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/BobinShihJosh" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
